@@ -1,0 +1,2 @@
+hello, parent here (pid: 54995) of child 54996
+hello, child here (pid: 54996) 
