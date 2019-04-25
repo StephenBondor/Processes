@@ -13,7 +13,7 @@ int main(void)
 	// Your code here
 	FILE *fp;
 
-	fp = fopen("text.txt", "a");
+	fp = fopen("text.txt", "w");
 	int rc = fork();
 	// ------------------------------------------------ child process starts executing here
 	if (rc < 0)
