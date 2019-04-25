@@ -9,7 +9,21 @@
 
 int main(void)
 {
-    // Your code here
+	// Your code here
 
-    return 0;
+	pid_t pid = fork();
+
+	if (pid == 0)
+	{
+		printf("hElLo!\n");
+	}
+	else
+	{
+		// This line guarantees that the child will print first:
+		wait(NULL);
+
+		printf("gOoDbYe!\n");
+	}
+
+	return 0;
 }
